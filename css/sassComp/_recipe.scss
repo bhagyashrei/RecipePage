@@ -1,0 +1,145 @@
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+ol li::before {
+  content: counter(li);
+  color: var(--brown-dark);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol li {
+  counter-increment: li;
+}
+
+.li-color {
+  color: var(--brown-darker);
+  font-weight: bolder;
+}
+
+td {
+  width: 50%;
+}
+
+.recipe-main {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &-h1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    &__style1 {
+      position: relative;
+      z-index: 1;
+      font-size: 6rem;
+      font-weight: 900;
+
+      font-stretch: ultra-expanded;
+    }
+
+    &__style2 {
+      top: 10.8rem;
+      position: absolute;
+      font-size: 3.7rem;
+      font-weight: 900;
+      color: var(--brown-dark);
+      transform: scaleY(1.8);
+      padding-left: 0.5rem;
+
+      @media screen and (max-width: $bp-largest) {
+        margin-top: -4rem;
+      }
+      @media screen and (max-width: $bp-medium) {
+        margin-top: 46rem;
+      }
+      @media screen and (max-width: $bp-small) {
+        margin-top: 39.5rem;
+      }
+      @media screen and (max-width: $bp-smallest) {
+        margin-top: 41.3rem;
+      }
+    }
+  }
+
+  &-content {
+    flex: 0 0 15%;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+  &-table {
+    border-collapse: collapse;
+    border-bottom: 1px solid var(--brown-dark);
+    width: 100%;
+  }
+  &-row-1 {
+    background-color: var(--brown-darker);
+    color: white;
+    text-align: left;
+    width: 5rem;
+  }
+
+  &-row-2 {
+    width: 5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-ul1 {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 1rem;
+  }
+  &-ul2 {
+    color: var(--brown-dark);
+    text-align: left;
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: -30%;
+    font-size: 1.2rem;
+    @media screen and (max-width: $bp-largest) {
+      margin-top: -80%;
+    }
+    @media screen and (max-width: $bp-medium) {
+      margin-top: -25%;
+    }
+    @media screen and (max-width: $bp-small) {
+      margin-top: -60%;
+    }
+    @media screen and (max-width: $bp-smallest) {
+      margin-top: -50%;
+    }
+  }
+
+  &-fact {
+    align-self: flex-end;
+    color: var(--brown-dark);
+    padding-left: 45rem;
+    padding-right: 3rem;
+  }
+}
+
+th {
+  padding-left: 2px;
+}
+.morebold {
+  font-size: 3rem;
+  font-weight: 700;
+  float: left;
+  border: 0;
+  padding-right: 0.5rem;
+  margin-top: -0.4rem;
+  padding-bottom: 0;
+  margin-bottom: -1.5rem;
+  transform: scaleY(1.5);
+  font-weight: 900;
+}

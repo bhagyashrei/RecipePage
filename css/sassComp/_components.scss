@@ -1,0 +1,70 @@
+.side-cont {
+  font-size: 0.8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &__title {
+    transform: scale(-1, -1);
+    writing-mode: vertical-lr;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    align-self: flex-end;
+    flex: 0 0 20%;
+    margin-top: 2rem;
+    margin-right: -1.9rem;
+    text-shadow: 3rem;
+  }
+  &__prep {
+    flex: 0 0 20%;
+    text-align: center;
+    text-align: center;
+  }
+  &__nutri {
+    flex: 0 0 20%;
+    text-align: center;
+  }
+  &__garnish {
+    flex: 0 0 12%;
+    text-align: center;
+    margin: 2rem;
+  }
+  &__suggestion {
+    flex: 0 0 12%;
+    text-align: center;
+    margin: 2rem;
+  }
+  &__num {
+    flex: 10%;
+    align-self: flex-start;
+    padding: 3rem;
+  }
+  &__time {
+    background-color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 95%;
+  }
+
+  &__pyramid {
+    height: 4rem;
+    width: 4rem;
+  }
+  &__butcher {
+    height: 5rem;
+    width: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  &__suggest {
+    fill:black;
+    height: 4rem;
+    width: 4rem;
+    border: 2px;
+    border-color: black;
+  }
+}

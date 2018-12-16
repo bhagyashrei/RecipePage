@@ -1,0 +1,43 @@
+.container {
+  max-width: 120 rem;
+  margin: 4rem 1rem;
+  box-shadow: var(--shadow-dark);
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+
+  @media screen and (max-width: $bp-largest){
+    margin-top:0;
+    max-width:100%;
+    width:100%;
+  }
+
+
+}
+
+.sidebar {
+  background-color: var(--brown-dark);
+  flex: 0 0 13%;
+ 
+}
+.recipe {
+  background-color: var(--color-grey-light);
+  flex: 1;
+  display: flex;
+  @media screen and (max-width: $bp-medium){
+    flex-direction: column;
+    flex-basis: 1;
+  }
+}
+
+.img {
+  flex: 60%;
+  @media screen and (max-width: $bp-medium){
+    flex:1;
+    order:-1;
+    height:30%;
+    width:100%;
+  }
+
+  
+}
